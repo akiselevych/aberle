@@ -1,0 +1,17 @@
+
+.container{
+  max-width: 1110px;
+  margin: 0 auto 96px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @media (max-width: 500px) {
+    margin-bottom: 65px;
+  }
+}
+
+.title{
+  margin-bottom: 68px;
+  @media (max-width: 500px) {
+    margin-bottom: 46px;
+  }
+}

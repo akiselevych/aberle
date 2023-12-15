@@ -1,0 +1,72 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-bottom: 96px;
+  @media (max-width: 500px) {
+    margin-bottom: 65px;
+  }
+}
+
+.title{
+  text-align: center;
+  max-width: 1064px;
+  margin-bottom: clamp(2.875rem, 2.542rem + 1.67vw, 3.875rem);
+  text-transform: uppercase;
+}
+.content{
+  max-width: 1130px;
+  display: flex;
+  @media (max-width: 869px) {
+    flex-direction: column;
+    min-height: 366px;
+    gap: 28px;
+  }
+}
+.reason{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 53px 21px 98px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &:first-child{
+    background-image: url("../../../public/assets/images/reasonsWhy1.png");
+  }
+  &:nth-child(2){
+    background-image: url("../../../public/assets/images/reasonsWhy2.png");
+  }
+  &:last-child{
+    background-image: url("../../../public/assets/images/reasonsWhy3.png");
+  }
+
+
+  @media (max-width: 869px) {
+    background-position-y: 94%;
+  }
+}
+.icon{
+  margin-bottom: 24px;
+}
+.cardTitle{
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+
+}
+.desc{
+  text-align: center;
+  color: white;
+  @media (max-width: 869px) {
+    max-width: 360px;
+  }
+}

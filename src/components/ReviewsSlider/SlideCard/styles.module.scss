@@ -1,0 +1,59 @@
+
+
+.container{
+  max-width: 410px;
+  height: 292px;
+  padding: 40px 26px 22px 46px;
+  border: 1px solid #C8C8C8;
+  border-radius: 10px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 1040px) {
+    margin: 0 auto;
+    height: 272px;
+  }
+  @media (max-width: 804px) {
+    padding: 17px 24px;
+    height: 233px;
+  }
+}
+.icon{
+  position: absolute;
+  left: 20px;
+  top: 34px;
+  @media (max-width: 804px) {
+    position: static;
+    margin-bottom: 4px;
+  }
+}
+.text{
+
+}
+.person{
+  display: flex;
+  justify-content: space-between;
+}
+.data{
+
+}
+.name{
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.position{
+  color: #C8C8C8;
+  font-family: "Satoshi",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+}
+.image{
+  width: 55px;
+  height: 55px;
+}

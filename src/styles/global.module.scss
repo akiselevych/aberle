@@ -1,0 +1,142 @@
+@import "@/styles/variables";
+
+.sectionContainer{
+  max-width: 996px;
+}
+
+.infoPageTitle{
+  font-family: "Baskerville", sans-serif;
+  font-size: clamp(1.25rem, 1.167rem + 0.42vw, 1.5rem);
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.h1{
+  font-family: "Baskerville",sans-serif;
+  font-size: clamp(1.25rem, 1rem + 1.25vw, 2rem);
+  font-weight: 700;
+  line-height: clamp(1.5rem, 1.167rem + 1.67vw, 2.5rem);
+  letter-spacing: 0;
+}
+.h1_small{
+  font-family: "Baskerville",sans-serif;
+  font-size: clamp(1.125rem, 0.917rem + 1.04vw, 1.75rem);
+  font-weight: 700;
+  line-height: clamp(1.375rem, 1.125rem + 1.25vw, 2.125rem);
+  letter-spacing: 0;
+}
+.h2{
+  font-family: "Baskerville",sans-serif;
+  font-size: clamp(1rem, 0.833rem + 0.83vw, 1.5rem);
+  font-weight: 700;
+  line-height: clamp(1.25rem, 1.042rem + 1.04vw, 1.875rem);
+  letter-spacing: 0;
+}
+.h3{
+  font-family: "Baskerville",sans-serif;
+  font-size: clamp(0.875rem, 0.75rem + 0.63vw, 1.25rem);
+  font-weight: 700;
+  line-height: clamp(1.125rem, 0.958rem + 0.83vw, 1.625rem);
+  letter-spacing: 0;
+}
+
+.headline_Satoshi{
+  font-family: "Satoshi",sans-serif;
+  font-size: clamp(1rem, 0.792rem + 1.04vw, 1.625rem);
+  font-weight: 500;
+  line-height: clamp(1.375rem, 1.25rem + 0.63vw, 1.75rem);
+  letter-spacing: 0;
+}
+
+.text1{
+  font-family: "Satoshi",sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 400;
+  line-height: clamp(1.125rem, 0.917rem + 1.04vw, 1.75rem);
+}
+.text2{
+  font-family: "Satoshi",sans-serif;
+  font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
+  font-weight: 400;
+  line-height: clamp(1rem, 0.833rem + 0.83vw, 1.5rem);
+  letter-spacing: 0;
+}
+.text3{
+  font-family: "Satoshi",sans-serif;
+  font-size: clamp(0.625rem, 0.542rem + 0.42vw, 0.875rem);
+  font-weight: 400;
+  line-height: clamp(0.875rem, 0.75rem + 0.63vw, 1.25rem);
+  letter-spacing: 0;
+}
+
+.primaryButton{
+  cursor: pointer;
+
+  background-color: $lightBlueColor;
+  border-radius: 3px;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: fit-content;
+
+  font-family: "Baskerville", sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 700;
+  line-height: clamp(1rem, 0.875rem + 0.63vw, 1.375rem);
+  letter-spacing: 0;
+
+
+  &:hover{
+    background-color: $aquaColor;
+  }
+  &:active{
+    background-color: $darkBlueColor;
+  }
+}
+
+.secondaryButton{
+  cursor: pointer;
+  background-color: $darkBlueColor;
+  border-radius: 3px;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: fit-content;
+
+  font-family: "Baskerville", sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 700;
+  line-height: clamp(1rem, 0.875rem + 0.63vw, 1.375rem);
+  letter-spacing: 0;
+
+
+  &:hover{
+    background-color: $darkGreyColor;
+  }
+  &:active{
+    background-color: $darkBlueColor;
+  }
+}
+
+.thirdButton{
+  cursor: pointer;
+
+  background-color: white;
+  border-radius: 3px;
+  color: $aquaColor;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+
+  font-family: "Baskerville", sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 700;
+  line-height: clamp(1rem, 0.875rem + 0.63vw, 1.375rem);
+  letter-spacing: 0;
+
+  &:hover{
+    background-color: $darkGreyColor;
+    color: white;
+  }
+  &:active{
+    background-color: $darkBlueColor;
+    color: white;
+  }
+}

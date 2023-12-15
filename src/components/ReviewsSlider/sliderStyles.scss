@@ -1,0 +1,29 @@
+
+.splide__slide{
+  @media (max-width: 1040px) {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+.splide__track{
+  max-width: 846px !important;
+  margin: 0 auto;
+
+}
+.splide .splide__arrow {
+  cursor: pointer;
+  border: 1px solid #1212124F;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  transform: none;
+  & > svg {
+    width: 24px !important;
+    height: 24px !important;
+    path{
+      fill: #121212B2;
+      stroke: none;
+    }
+  }
+}

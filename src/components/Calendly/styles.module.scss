@@ -1,0 +1,29 @@
+
+.container{
+  max-width: 1110px;
+  margin: 0 auto 96px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @media (max-width: 500px) {
+    margin-bottom: 65px;
+  }
+}
+
+.title{
+  margin-bottom: 46px;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+.calendly{
+  @media (max-width: 999px) {
+    width: 85%;
+    margin: 0 auto;
+  }
+  width: 100%;
+  min-height: 824px;
+  border: 1px solid #00629833;
+}

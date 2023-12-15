@@ -1,0 +1,142 @@
+@import "@/styles/variables";
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 40px;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 846px) {
+    padding: 18px 14px 10px;
+  }
+}
+
+.logoWrapper {
+  a{
+    display: block;
+  }
+}
+
+.logo {
+
+}
+.burgerMenu{
+  @media (min-width: 847px) {
+    display: none;
+  }
+}
+.menu {
+  @media (max-width: 846px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translate(0%,100%);
+
+    padding: 20px 18px 34px 26px;
+
+    background-color: white;
+    z-index: 2;
+  }
+}
+
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  @media (max-width: 996px) {
+    gap: 22px;
+  }
+  @media (max-width: 846px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.listItem {
+  cursor: pointer;
+
+  display: block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  font-family: "Satoshi", sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 500;
+  line-height: clamp(0.875rem, 0.667rem + 1.04vw, 1.5rem);
+
+  border-radius: 4px;
+  position: relative;
+  & > *, &{
+    color: $lightBlueColor;
+  }
+
+  @media (max-width: 846px) {
+    padding: 0;
+  }
+}
+
+.activeListItem{
+  font-weight: 900;
+}
+.decorated{
+  margin-left: 64px;
+  font-weight: 700;
+  padding: 12px 25px;
+  a{
+    color: white;
+    font-family: "Baskerville", sans-serif;
+  }
+
+  @media (max-width: 927px) {
+    margin-left: 0px;
+  }
+}
+.mobDropDown{
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.activeMobDropDown{
+  margin-top: 22px;
+  height: fit-content;
+  opacity: 1;
+}
+.dropDown{
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  background-color: white;
+  width: fit-content;
+
+  transform: translateY(110%);
+  border: 1px solid $greyColor;
+  box-shadow: 5px 5px 15px 0px #A1BCCBB2;
+}
+.dropItem{
+  display: block;
+  white-space: nowrap;
+  cursor: pointer;
+
+  padding: 12px 28px;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 500;
+  line-height: clamp(0.875rem, 0.667rem + 1.04vw, 1.5rem);
+  color: $lightBlueColor;
+
+  &:hover{
+    background-color: #19A1CC24;
+  }
+  @media (max-width: 846px) {
+    padding-left: 0;
+    &:first-child{
+      border-top: 1px solid #00629826;
+    }
+    border-bottom: 1px solid #00629826;
+  }
+}
+.activeDropItem{
+  font-weight: 800;
+}

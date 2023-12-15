@@ -1,0 +1,63 @@
+@import "@/styles/reset";
+@import "@/styles/variables";
+
+@font-face {
+  font-family: "Baskerville";
+  src: url("../../font/Baskerville-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baskerville";
+  src: url("../../font/LibreBaskerville-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../font/Satoshi-Light.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../font/Satoshi-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../font/Satoshi-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../font/Satoshi-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../../font/InstrumentSans_Condensed-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+  max-width: 1280px;
+  min-width: 320px;
+  min-height: 100vh;
+  margin:  0 auto;
+
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+main{
+
+}
+
+

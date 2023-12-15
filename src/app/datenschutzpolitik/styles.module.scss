@@ -1,0 +1,37 @@
+
+.container{
+  max-width: 1110px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: clamp(2.438rem, 0.917rem + 7.6vw, 7rem) auto 0;
+}
+.title{
+  margin-bottom: 24px;
+
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subBlock{
+  span{
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+.subTitle{
+  font-family: "Satoshi", sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 500;
+  line-height: 24px;
+
+  margin-bottom: 8px;
+}
+.text{
+  font-family: "Satoshi", sans-serif;
+  font-size: clamp(0.875rem, 0.833rem + 0.21vw, 1rem);
+  font-weight: 400;
+  line-height: 24px;
+}

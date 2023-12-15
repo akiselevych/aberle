@@ -1,0 +1,81 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 96px;
+  @media (max-width: 500px) {
+    margin-bottom: 65px;
+  }
+}
+
+.title{
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 1.333rem + 0.83vw, 2rem);
+}
+.btn{
+  padding: clamp(0.5rem, 0.417rem + 0.42vw, 0.75rem) clamp(0.75rem, -0.167rem + 4.58vw, 3.5rem);
+  margin-bottom: clamp(1.5rem, 1.333rem + 0.83vw, 2rem);
+}
+.content{
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  @media (max-width: 696px) {
+    flex-direction: column;
+  }
+}
+.card{
+  padding: clamp(2.25rem, 1.542rem + 3.54vw, 4.375rem) 20px clamp(2.188rem, 1.833rem + 1.77vw, 3.25rem);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  &:first-child{
+    background-image: url("../../../public/assets/images/cardBC1.webp");
+  }
+  &:nth-child(2){
+    background-image: url("../../../public/assets/images/cardBC2.webp");
+  }
+  &:last-child{
+    background-image: url("../../../public/assets/images/cardBC3.webp");
+  }
+
+  @media (max-width: 420px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: 696px) {
+    & > *{
+      max-width: 300px;
+    }
+  }
+}
+.cardTitle{
+  margin-bottom: 24px;
+  text-align: center;
+  color: white;
+}
+.icon{
+  margin-bottom: 24px;
+  width: clamp(2.5rem, 2.042rem + 2.29vw, 3.875rem);
+  height: clamp(2.5rem, 2.042rem + 2.29vw, 3.875rem);
+}
+
+.desc{
+  text-align: center;
+  margin-bottom: 24px;
+  color: white;
+
+  font-family: "Satoshi",sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+
+}

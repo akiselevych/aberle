@@ -1,0 +1,44 @@
+
+.container {
+  padding-bottom: 125px;
+  margin-bottom: 96px;
+  position: relative;
+  @media (max-width: 500px) {
+    margin-bottom: 45px;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 41px;
+  text-align: center;
+}
+
+.content {
+
+}
+
+.slider {
+
+}
+
+.slide {
+
+}
+
+.btnContainer {
+  padding-left: 14px;
+  padding-right: 14px;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1040px) {
+    position: static;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

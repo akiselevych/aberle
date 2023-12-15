@@ -1,0 +1,33 @@
+
+.container{
+  max-width: 1110px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: clamp(2.438rem, 0.917rem + 7.6vw, 7rem) auto 0;
+}
+.title{
+  margin-bottom: 24px;
+
+  font-family: "Baskerville", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.text{
+  font-family: "Satoshi", sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 500;
+  line-height: 24px;
+
+}
+.lightText{
+  font-family: "Satoshi", sans-serif;
+  font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  font-weight: 400;
+  line-height: 24px;
+}
